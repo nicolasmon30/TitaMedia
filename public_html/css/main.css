@@ -107,7 +107,13 @@ body, html {
   -moz-column-count: 3;
        column-count: 3;
   -moz-column-gap: 20px;
-       column-gap: 20px; }
+       column-gap: 20px;
+  transition: .2s all ease-out; }
+  .titaGrid__full {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-gap: 0;
+         column-gap: 0; }
   .titaGrid__box {
     display: grid;
     grid-template-rows: 1fr auto;

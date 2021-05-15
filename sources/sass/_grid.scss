@@ -48,6 +48,11 @@
 .#{$prefix}Grid{
     column-count: 3;
     column-gap: 20px;
+    transition: .2s all ease-out;
+    &__full{
+        column-count: 1;
+        column-gap: 0;
+    }
     &__box{
         display: grid;
         grid-template-rows: 1fr auto;
