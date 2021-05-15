@@ -1,0 +1,33 @@
+/* MIXINS */
+
+// MEDIAQUERIES
+@mixin mq($media){
+	@if type-of($media) == number {
+		@if unitless($media) {
+			@media only screen and (max-width: $media + px){
+				@content;
+			}  
+		}
+	} @else {
+		@if type-of(map-get($mediaqueries,$media)) == number {
+			@media only screen and (max-width: map-get($mediaqueries,$media) + px){
+				@content;
+			}
+		} @else if type-of(map-get($mediaqueries,$media)) == string {
+			@media #{map-get($mediaqueries,$media)}{
+				@content;
+			}
+		}
+	}
+}
+
+// FLEXBOX
+@mixin flex($jc: center, $ai: center, $fw: wrap, $direction: row, $d: flex){
+	display: $d;
+	justify-content: $jc;
+	align-items: $ai;
+	align-content: $ai;
+	flex-direction: $direction;
+	flex-wrap: $fw;
+	@content;
+}

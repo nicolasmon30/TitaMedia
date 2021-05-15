@@ -1,0 +1,128 @@
+.#{$prefix}Btn {
+    width: 100%;
+    max-width: 7%;
+    margin: 50px auto;
+    @include flex(space-between, center, nowrap);
+
+    &__grid,
+    &__row {
+        width: 50%;
+        margin: 0 10px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.#{$prefix}Tabs {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto 20px;
+
+    &__box {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @include flex(space-between);
+    }
+
+    &__item {
+        padding: 8px 25px;
+        font-family: $monserrat;
+        font-size: toRem(16);
+        color: $grayDark;
+        letter-spacing: 3px;
+        transition: .1s all ease-out;
+        &:hover{
+            background-color: $pink;
+            color: $white;
+        }
+        &--active {
+            background-color: $pink;
+            color: $white;
+        }
+    }
+}
+.#{$prefix}Grid{
+    column-count: 3;
+    column-gap: 20px;
+    &__box{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin-bottom: 20px;
+        break-inside: avoid;
+        background-color: $gray;
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        &:hover{
+            .#{$prefix}Grid{
+                &__info{
+                    height: calc(100% - 20px);
+                    @include flex(center,center,wrap,column);
+                    &__texts{
+                        h2{
+                            opacity: 1;
+                        }
+                        p{
+                            opacity: 1;
+                        }
+            
+                    }
+                }
+            } 
+        }
+    }
+    &__img{
+        img{
+            grid-row: 1 / -1;
+            grid-column: 1;
+            display: block;
+            max-width: 100%;   
+        }
+    }
+    &__info{
+        position: absolute;
+        background-color: $pink;
+        width: calc(100% - 20px);
+        height: 0%;
+        transition: .5s all ease-out;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto auto;
+        @include flex(center,center,wrap,column);
+        &__texts{
+            h2{
+                opacity: 0;
+                transition: .2s all ease-out;
+                width: 100%;
+                text-align: center;
+                display: inline-flex;
+                border-bottom: 1px solid $white;
+                margin: 0 0 10px;
+                padding: 0 0 10px;
+                font-family: $monserrat;
+                font-size: toRem(18);
+                color: $white;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            p{
+                opacity: 0;
+                transition: .2s all ease-out;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                color: $white;
+                font-size: toRem(14);
+                font-family: $questrial;
+                letter-spacing: 3px;
+            }
+
+        }
+    }
+}

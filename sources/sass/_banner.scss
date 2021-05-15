@@ -1,0 +1,40 @@
+.#{$prefix}Banner{
+    width: 100%;
+    height: 100vh;
+    &__box{
+        @include flex(center,center,wrap,column);
+        background-color: $pink;
+        width: 100%;
+        height: 100%;
+    }
+    &__title{
+        font-family: $monserrat;
+        font-weight: 700;
+        font-size: toRem(35);
+        margin: 0 0 30px;
+        letter-spacing: 10px;
+        color: $white;
+        text-transform: uppercase;
+    }
+    &__description{
+        font-family: $questrial;
+        font-size: toRem(16);
+        color: $white;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 1.3;
+        margin: 0 0 10px;
+    }
+    &__btn{
+        display: block;
+        padding: 15px 30px;
+        background: $white;
+        margin: 40px 0 0;
+        color: $pink;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: toRem(16);
+        font-family: $questrial;
+        letter-spacing: 1px;
+    }
+}

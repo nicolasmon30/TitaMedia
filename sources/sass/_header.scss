@@ -1,0 +1,53 @@
+.#{$prefix}Header{
+    width: 100%;
+    max-width: 100%;
+    &__container{
+        @include flex(space-between, center);
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    &__logo{
+        h1{
+            font-family: $questrial;
+            font-size: toRem(30);
+            color: $black;
+            font-weight: 700;
+            letter-spacing: 3px
+        }
+    }
+    &__menu{
+        &__box{
+            @include flex(flex-end);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        &__item{
+            margin: 0 15px;
+            padding: 8px 35px;
+            transition: .1s all ease-out;
+            &:hover{
+                background-color: $pink;
+                a{
+                    color: $white;
+                }
+            } 
+            &--active{
+                background-color: $pink;
+                a{
+                    color: $white;
+                }
+            }
+        }
+        &__link{
+            font-family: $monserrat;
+            font-size: toRem(16);
+            color: $grayDark;
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+
+    }
+}

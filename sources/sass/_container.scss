@@ -1,0 +1,15 @@
+.#{$prefix}Container{
+    margin: 0 auto;
+    &--full{
+        width: 100%;
+        max-width: 100%;
+    }
+    &--limit{
+        width: 100%;
+        max-width: 90%;
+    }
+    &--small{
+        width: 100%;
+        max-width: 80%;
+    }
+}

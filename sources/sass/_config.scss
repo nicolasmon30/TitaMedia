@@ -1,0 +1,40 @@
+/* CONFIGURATION */
+body, html{
+	margin: 0;
+	padding: 0;
+}
+// PREFIX CLASS
+$prefix: "tita";
+
+// MEDIAQUERIES
+$mediaqueries: (
+	hover: "(hover: hover)",
+	ie: "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)",
+	safari: "screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)",
+	safari2: "not all and (min-resolution:.001dpcm)",
+	mobS3: 360,
+	mobS2: 480,
+	mobS1: 540,
+	mobS: 640,
+	mob: 768,
+	tabS: 820,
+	tab: 991,
+	lapS3: 1024,
+	lapS2: 1199,
+	lapS: 1280,
+	lap: 1367,
+	deskS: 1440,
+	desk: 1560,
+	deskB: 1680
+);
+
+//BASE FONT
+
+$baseFont: 16;
+
+// COLORS
+$black: #000000;
+$pink : #FC758C;
+$white: #FFFFFF;
+$gray: #F6F6F6;
+$grayDark: #9E9E9E;

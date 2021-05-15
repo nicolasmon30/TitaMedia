@@ -1,14 +1,12 @@
-# FRONT TEMPLATE
-
-This is an useful web template for development of impressive websites.
+# TITA MEDIA PRUEBA HTML
 
 ## STARTING 🚀
 
-These instructions will allow you to work the right way with this amazing template 😎
+Estas son las instrucciones para correr la prueba
 
 ### prerequisites  📋
 
-These things are necessary for proper functioning of the template.
+Se requieren estos requisitos para poder correr el proyecto
 
 ```
 - node 10.16.3
